@@ -1,0 +1,12 @@
+---
+# tasks file for nginx_proxy
+
+- name: Настроить проксирующий Nginx
+  template:
+    src: nginx_proxy/templates/nginx_proxy.conf.j2
+    dest: /etc/nginx/sites-available/default
+  
+- name: Перезапустить Nginx
+  service:
+    name: nginx
+    state: restarted

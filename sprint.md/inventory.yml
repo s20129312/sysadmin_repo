@@ -1,0 +1,8 @@
+nginx_servers:
+  hosts:
+    vm1:
+      ansible_host: s20129312@158.160.40.74
+    vm2:
+      ansible_host: s20129312@158.160.54.219
+    vm3:
+      ansible_host: s20129312@158.160.47.172
